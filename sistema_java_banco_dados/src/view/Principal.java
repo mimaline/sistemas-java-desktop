@@ -6,10 +6,10 @@ package view;
  */
 public class Principal extends javax.swing.JFrame {
 
-    CadCliente cli   = new CadCliente();
-    CadVendedor vend = new CadVendedor();
-    CadProduto pro   = new CadProduto();
-    CadVenda ven     = new CadVenda();
+    ViewManutencaoPessoa cli   = new ViewManutencaoPessoa();
+//    CadVendedor vend = new CadVendedor();
+    ViewManutencaoProduto pro   = new ViewManutencaoProduto();
+//    CadVenda ven     = new CadVenda();
 
     public Principal() {
         initComponents();
@@ -38,7 +38,7 @@ public class Principal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, 580, 10));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 680, 1070, 10));
 
         jMenu1.setText("Cadastros");
 
@@ -120,7 +120,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        vend.setVisible(true);
+        //vend.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
@@ -128,7 +128,7 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        ven.setVisible(true);
+        //ven.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void btnSairMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSairMouseClicked

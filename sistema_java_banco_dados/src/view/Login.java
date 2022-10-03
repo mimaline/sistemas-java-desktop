@@ -3,7 +3,7 @@ package view;
 import java.awt.Container;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
-import model.Vendedor;
+// import model.Vendedor;
 
 /**
  *
@@ -18,7 +18,7 @@ public class Login extends javax.swing.JFrame {
 
     Container container = this.getContentPane();
 
-    Vendedor ven = new Vendedor();
+    //Vendedor ven = new Vendedor();
     Principal p = new Principal();
 
     /**
@@ -96,15 +96,15 @@ public class Login extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
-        ven.setUsuario(jTextField1.getText());
-        ven.setSenha(jPasswordField1.getText());
-        if (ven.verificaUsuario()) {
+        //ven.setUsuario(jTextField1.getText());
+        //ven.setSenha(jPasswordField1.getText());
+        //if (ven.verificaUsuario()) {
             p.setVisible(true);
             dispose();
-        } else {
-            JOptionPane.showMessageDialog(null, "Usuário ou Senha Incorretos!!");
-            jTextField1.requestFocus();
-        }
+//        } else {
+//            JOptionPane.showMessageDialog(null, "Usuário ou Senha Incorretos!!");
+//            jTextField1.requestFocus();
+//        }
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -116,15 +116,15 @@ public class Login extends javax.swing.JFrame {
 
     private void jPasswordField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPasswordField1KeyPressed
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
-            ven.setUsuario(jTextField1.getText());
-            ven.setSenha(jPasswordField1.getText());
-            if (ven.verificaUsuario()) {
-                p.setVisible(true);
-                dispose();
-            } else {
-                JOptionPane.showMessageDialog(null, "Usuário ou Senha Incorretos!!");
-                jTextField1.requestFocus();
-            }
+//            ven.setUsuario(jTextField1.getText());
+//            ven.setSenha(jPasswordField1.getText());
+//            if (ven.verificaUsuario()) {
+//                p.setVisible(true);
+//                dispose();
+//            } else {
+//                JOptionPane.showMessageDialog(null, "Usuário ou Senha Incorretos!!");
+//                jTextField1.requestFocus();
+//            }
         }
     }//GEN-LAST:event_jPasswordField1KeyPressed
 
